@@ -127,6 +127,15 @@
             <groupId>org.bstats</groupId>
             <artifactId>bstats-bukkit</artifactId>
             <version>1.4</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/bstats-bukkit-1.4.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>me.activated</groupId>
+            <artifactId>AquaCoreAPI</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/AquaCoreAPI.jar</systemPath>
         </dependency>
     </dependencies>
 
