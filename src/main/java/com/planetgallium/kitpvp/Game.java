@@ -19,6 +19,8 @@ import com.planetgallium.kitpvp.game.Arena;
 import com.planetgallium.kitpvp.listener.*;
 import com.planetgallium.kitpvp.util.*;
 
+import java.util.Objects;
+
 public class Game extends JavaPlugin implements Listener {
 	
 	private static Game instance;
@@ -36,7 +38,7 @@ public class Game extends JavaPlugin implements Listener {
 	@Override
 	public void onEnable() {
 
-		Toolkit.printToConsole("&f[SoupPvP] Enabling KitPvP version " + this.getDescription().getVersion() + "...");
+		Toolkit.printToConsole("[SoupPvP] Enabling KitPvP version " + this.getDescription().getVersion() + "...");
 
 		instance = this;
 		resources = new Resources(this);
@@ -65,7 +67,7 @@ public class Game extends JavaPlugin implements Listener {
 		pm.registerEvents(getArena().getKillStreaks(), this);
 		
 		getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
-	    getCommand("souppvp").setExecutor(new MainCommand(this));
+	    Objects.requireNonNull(getCommand("souppvp")).setExecutor(new MainCommand(this));
 
 		if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
 			Bukkit.getConsoleSender().sendMessage(Toolkit.translate("[SoupPvP] Hooking into PlaceholderAPI..."));

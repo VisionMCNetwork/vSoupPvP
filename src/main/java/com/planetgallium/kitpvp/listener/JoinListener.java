@@ -36,7 +36,7 @@ public class JoinListener implements Listener {
 			
 			if (p.isOp()) {
 				
-				p.sendMessage(Toolkit.translate("&7[&b&lKIT-PVP&7] &aAn update was found: v" + plugin.getUpdateVersion() + " https://www.spigotmc.org/resources/27107/"));
+				p.sendMessage(Toolkit.translate("[SoupPvP] &aAn update was found: v" + plugin.getUpdateVersion() + " https://www.spigotmc.org/resources/27107/"));
 				
 			}
 			
@@ -57,7 +57,7 @@ public class JoinListener implements Listener {
 
 		if (p.getName().equals("cervinakuy")) {
 			
-			e.setJoinMessage(Toolkit.translate("&7[&b&lKIT-PVP&7] &7The Developer of &bKitPvP &7has joined the server."));
+			e.setJoinMessage(Toolkit.translate("[SoupPvP] The Developer of SoupPvP has joined the server."));
 			
 		}
 		

@@ -24,9 +24,9 @@ Signs:
     Line-3: '&1your stats'
     Line-4: ' '
   Refill:
-    Line-1: '&7[&b&lKIT-PVP&7]'
-    Line-2: '&1Click to refill'
-    Line-3: '&1your soups'
+    Line-1: ''
+    Line-2: '&4&m- &4&lSoup &4&m-'
+    Line-3: ''
     Line-4: ' '
   Arena:
     Line-1: '&7[&b&lKIT-PVP&7]'

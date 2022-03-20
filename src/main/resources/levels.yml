@@ -217,4 +217,4 @@ Levels:
       Prefix: '&6Level %level%'
     100:
       Prefix: '&cLevel 100'
-    Enabled: true
+    Enabled: false

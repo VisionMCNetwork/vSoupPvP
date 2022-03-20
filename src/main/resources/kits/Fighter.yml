@@ -7,9 +7,13 @@ Inventory:
     Helmet:
       Name: '&7Fighter Helmet'
       Material: IRON_HELMET
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
     Chestplate:
       Name: '&7Fighter Chestplate'
       Material: IRON_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
     Leggings:
       Name: '&7Fighter Leggings'
       Material: IRON_LEGGINGS
@@ -20,15 +24,18 @@ Inventory:
     0:
       Name: '&aFighter''s Sword'
       Material: IRON_SWORD
+      Enchantments:
+        DAMAGE_ALL: 1
     1:
       Name: '&aHealth Pack &7(Right Click)'
       Material: ENDER_CHEST
-    8:
-      Name: '&aPlayer Tracker &7(Right Click)'
-      Material: COMPASS
     Fill:
-      Name: '&aRegenerative Soup &7(Right Click)'
+      Name: '&e&lSoup'
       Material: MUSHROOM_SOUP
+Effects:
+  SPEED:
+    Amplifier: 1
+    Duration: 9938
 Abilities:
   HealthPack:
     Activator:
@@ -37,7 +44,7 @@ Abilities:
     Cooldown:
       Cooldown: '30S'
     Message:
-      Message: '%prefix% &7You have used a &bHealth Pack&7.'
+      Message: '%prefix%&eYou have used a &dHealth Pack&e.'
     Sound:
       Sound: ANVIL_USE
       Pitch: 1

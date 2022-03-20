@@ -13,7 +13,7 @@ api-version: 1.13
 commands:
    souppvp:
      description: Main command.
-     aliases: [Sp, Soup-PvP]
+     aliases: [kp, kit-pvp, soup-pvp, sp]
    ckit:
      description: Select a kit.
    cspawn:

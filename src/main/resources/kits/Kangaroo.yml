@@ -7,6 +7,8 @@ Inventory:
     Helmet:
       Name: '&7Kangaroo Helmet'
       Material: LEATHER_HELMET
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
       Dye:
         Red: 165
         Green: 42
@@ -14,6 +16,8 @@ Inventory:
     Chestplate:
       Name: '&7Kangaroo Chestplate'
       Material: LEATHER_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
       Dye:
         Red: 165
         Green: 42
@@ -36,17 +40,19 @@ Inventory:
     0:
       Name: '&aKangaroo''s Sword'
       Material: IRON_SWORD
+      Enchantments:
+        DAMAGE_TO_ALL: 1
     1:
       Name: '&aLauncher &7(Right Click)'
       Material: SADDLE
       Amount: 3
-    8:
-      Name: '&aPlayer Tracker &7(Right Click)'
-      Material: COMPASS
     Fill:
-      Name: '&aRegenerative Soup &7(Right Click)'
+      Name: '&e&lSoup'
       Material: MUSHROOM_SOUP
 Effects:
   JUMP:
     Amplifier: 2
     Duration: 100000
+  SPEED:
+    Amplifier: 1
+    Duration: 9938  

@@ -9,8 +9,8 @@ Abilities:
       NoFire: '&aFire Arrows &cOFF &7(Right Click)'
       Amount: 10
     Message:
-      Fire: '%prefix% &bFire Arrows &7are now &eON&7.'
-      NoFire: '%prefix% &bFire Arrows &7are now &cOFF&7.'
+      Fire: '%prefix% &eFire Arrows are now &eON&e.'
+      NoFire: '%prefix% &eFire Arrows are now &cOFF&e.'
       Enabled: true
     Sound:
       Sound: GHAST_FIREBALL
@@ -29,7 +29,7 @@ Abilities:
       Name: '&aTNT Trail &7(Right Click)'
       Amount: 3
     Message:
-      Message: '%prefix% &7You have used a &bTNT Trail&7.'
+      Message: '%prefix%&eYou have used a &bTNT Trail&e.'
       Enabled: true
     Sound:
       Sound: FIZZ
@@ -40,18 +40,18 @@ Abilities:
       Name: '&aLauncher &7(Right Click)'
       Amount: 3
     Message:
-      Message: '%prefix% &7You have used a &bLauncher&7.'
+      Message: '%prefix%&eYou have used a &bLauncher&e.'
       Enabled: false
     Sound:
       Sound: BAT_TAKEOFF
       Pitch: 1
-      Enabled: true  
+      Enabled: true
   Warper:
     Item:
       Name: '&aNearest Player Teleporter &7(Right Click)'
       Amount: 3
     Message:
-      Message: '%prefix% &7You have used a &bNearest Player Teleporter&7.'
+      Message: '%prefix%&eYou have used a &bNearest Player Teleporter&e.'
       Enabled: true
     Sound:
       Sound: ENDERMAN_TELEPORT
@@ -72,7 +72,7 @@ Abilities:
       Name: '&aVanish Stars &7(Right Click)'
       Amount: 3
     Message:
-      Message: '%prefix% &7You have used a &bVanish Star&7.'
+      Message: '%prefix%&eYou have used a &bVanish Star&e.'
       Enabled: true
     Sound:
       Sound: CREEPER_HISS
@@ -83,7 +83,7 @@ Abilities:
       Name: '&aLightning Strike &7(Click Player)'
       Amount: 3
     Message:
-      Message: '%prefix% &7You have used a &bLighting Strike &7on &b%player%&7.'
+      Message: '%prefix%&eYou have used a &dLighting Strike &eon &c%player%e.'
       Enabled: true
     Sound:
       Sound: AMBIENCE_THUNDER
@@ -94,7 +94,7 @@ Abilities:
       Name: '&aBlood Suckers &7(Click Player)'
       Amount: 3
     Message:
-      Message: '%prefix% &7You have sucked the blood of &b%player%&7. &c+ 3 Health'
+      Message: '%prefix%&eYou have sucked the blood of &c%player%&e. &c+ 3 Health'
       Enabled: true
     Sound:
       Sound: BAT_HURT
@@ -105,7 +105,7 @@ Abilities:
       Name: '&aSwitcher Pellets &7(Right Click)'
       Amount: 4
     Message:
-      Message: '%prefix% &7You have switched places with &b%player%&7.'
+      Message: '%prefix%&eYou have switched places with &c%player%&e.'
       Enabled: true
     Sound:
       Sound: ENDERMAN_TELEPORT

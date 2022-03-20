@@ -7,9 +7,13 @@ Inventory:
     Helmet:
       Name: '&7Rhino Helmet'
       Material: DIAMOND_HELMET
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
     Chestplate:
       Name: '&7Rhino Chestplate'
       Material: LEATHER_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
       Amount: 1
       Dye:
         Red: 76
@@ -18,6 +22,8 @@ Inventory:
     Leggings:
       Name: '&7Rhino Leggings'
       Material: LEATHER_LEGGINGS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
       Amount: 1
       Dye:
         Red: 76
@@ -26,6 +32,8 @@ Inventory:
     Boots:
       Name: '&7Rhino Boots'
       Material: LEATHER_BOOTS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
       Amount: 1
       Dye:
         Red: 76
@@ -35,14 +43,13 @@ Inventory:
     0:
       Name: '&aRhino''s Sword'
       Material: IRON_SWORD
+      Enchantments:
+        DAMAGE_ALL: 1
     1:
       Name: '&aStampede &7(Right Click)'
       Material: FIREWORK_STAR
-    8:
-      Name: '&aPlayer Tracker &7(Right Click)'
-      Material: COMPASS
     Fill:
-      Name: '&aRegenerative Soup &7(Right Click)'
+      Name: '&e&lSoup &7(Right Click)'
       Material: MUSHROOM_SOUP
 Abilities:
   Stampede:
@@ -52,7 +59,7 @@ Abilities:
     Cooldown:
       Cooldown: '60S'
     Message:
-      Message: '%prefix% &7You have used your ability.'
+      Message: '%prefix%&aYou have used your ability.'
     Sound:
       Sound: HORSE_ANGRY
       Pitch: 0

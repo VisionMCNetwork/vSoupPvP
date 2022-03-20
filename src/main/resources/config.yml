@@ -5,34 +5,35 @@
 Items:
   Kits:
     Enabled: true
-    Name: '&aKit Selector &7(Right Click)'
+    Name: '&e&lKit Selector &8(&7Right-Click&8)'
     Material: CHEST
     Slot: 0
     Menu: true
     Commands: []
   Leave:
     Enabled: true
-    Name: '&aReturn to Hub &7(Right Click)'
+    Name: '&e&lReturn to Hub &8(&7Right-Click&8)'
     Material: WATCH
-    Slot: 8
+    Slot: 1
     BungeeCord:
-      Server: Hub
-      Enabled: false
+      Server: Hub-1
+      Enabled: true
     Commands: []
 Chat:
-  Format: '%level% &e%player% &f%message%'
-  Enabled: true
+  Format: '%level% &e%player%: &f%message%'
+  Enabled: false
 Combat:
   HitSound:
     Sound: BLAZE_HIT
     Pitch: 1
     Enabled: true
   ArrowHit:
-    Message: '%prefix% &b%player% &7is on &c%health%&7.'
+    Message: '%prefix% &e%player% &9is on &c%health%&9.'
     Enabled: true
   ArrowReturn:
     ItemName: '&eReturnable Arrow'
-    NoSpace: '%prefix% &cYou must have at least one slot open in your inventory for you to receive your arrow for your successful shot.'
+    NoSpace: '%prefix% &cYou must have at least one slot open in your inventory for
+      you to receive your arrow for your successful shot.'
     Enabled: true
 Kill:
   SoupReward:
@@ -44,52 +45,52 @@ Kill:
 Death:
   Title:
     Title: '&c&lYOU DIED!'
-    Subtitle: '&7You will respawn in %seconds% seconds.'
+    Subtitle: '&eYou will respawn in &c%seconds% &eseconds.'
     Time: 5
-    Message: '%prefix% &7Respawning...'
+    Message: '%prefix% &6Respawning...'
   Sound:
     Sound: AMBIENCE_THUNDER
     Pitch: 1
     Enabled: false
   Commands: []
   Messages:
-    Player: '%prefix% &b%victim% &7was killed by &b%killer% &7(&c%killer_health%&7).'
-    Shot: '%prefix% &b%victim% &7was shot by &b%killer% &7(&c%killer_health%&7).'
-    Fall: '%prefix% &b%victim% &7fell to their doom.'
-    Void: '%prefix% &b%victim% &7died from the void.'
-    Fire: '%prefix% &b%victim% &7died from fire.'
-    Explosion: '%prefix% &b%victim% &7blew up.'
-    Suicide: '%prefix% &b%victim% &7killed themselves.'
-    Unknown: '%prefix% &b%victim% &7died.'
+    Player: '%prefix%&a%victim% &9was killed by &a%killer% &c(%killer_health%).'
+    Shot: '%prefix%&a%victim% &9was shot by &a%killer% &c(%killer_health%).'
+    Fall: '%prefix%&a%victim% &9fell to their doom.'
+    Void: '%prefix%&a%victim% &9died from the void.'
+    Fire: '%prefix%&a%victim% &9died from fire.'
+    Explosion: '%prefix%&a%victim% &9blew up.'
+    Suicide: '%prefix%&a%victim% &9killed themselves.'
+    Unknown: '%prefix%&a%victim% &9died.'
     Enabled: true
 Respawn:
   Commands: []
 PlayerTracker:
-  Name: '&aPlayer Tracker'
-  Message: '&b&lTarget: &3%nearestplayer% &b&lDistance: &3%distance%'
+  Name: '&e&lPlayer Tracker'
+  Message: '&e&lTarget: &c%nearestplayer% &e&lDistance: &d%distance%'
   NoneOnline: '&cNo Players Online'
   TrackBelowY: 128
   RefreshOnlyWhenHeld: true
 Soups:
-  Name: '&aRegenerative Soups &7(Right Click)'
+  Name: '&e&lSoups'
   RegenAmount: 6
   RemoveAfterUse: true
   Lore:
-  - '&7Use this item to regain health.'
+    - '&eUse this item to regain health.'
   Sound: EAT
   Pitch: 1
   Enabled: true
 TNT:
-  Name: '&aThrowable TNT &7(Right Click)'
+  Name: '&aThrowable TNT &8(&7Right-Click&8)'
   Enabled: true
 PreviewMenuBackArrowCommands:
-- 'player: kp menu'
+  - 'player: kp menu'
 Commands:
   Alias:
-    Spawn: false
-    Kit: false
-    Kits: false
-    Stats: false
+    Spawn: true
+    Kit: true
+    Kits: true
+    Stats: true
 Arena:
   ClearPotionEffectsOnJoin: true
   ClearInventoryOnJoin: true
@@ -103,7 +104,7 @@ Arena:
   PreventHunger: true
   PreventItemDurabilityDamage: false
   PreventChestOpen: true
-  PreventFallDamage: false
+  PreventFallDamage: true
   PreventDeathDrops: true
   PreventArenaSignUseWithKit: true
   KeepWeatherAtSunny: true
@@ -111,7 +112,7 @@ Arena:
   GiveItemsOnRespawn: true
   GiveItemsOnJoin: true
   NoKitProtection: true
-  FancyDeath: true
+  FancyDeath: false
   ResetKillStreakOnLeave: true
   ToSpawnOnJoin: true
   DeathParticles: true
@@ -120,3 +121,12 @@ Other:
 Spawn:
   Time: 5
   Enabled: true
+Arenas:
+  world:
+    '1':
+      World: world
+      X: 0
+      Y: 108
+      Z: -1
+      Yaw: -90.581604
+      Pitch: -3.4502568

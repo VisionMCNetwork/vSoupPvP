@@ -7,6 +7,8 @@ Inventory:
     Helmet:
       Name: '&7Witch Helmet'
       Material: LEATHER_HELMET
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
       Dye:
         Red: 139
         Green: 0
@@ -14,6 +16,8 @@ Inventory:
     Chestplate:
       Name: '&7Witch Chestplate'
       Material: LEATHER_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
       Dye:
         Red: 139
         Green: 0
@@ -21,6 +25,8 @@ Inventory:
     Leggings:
       Name: '&7Witch Leggings'
       Material: LEATHER_LEGGINGS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
       Dye:
         Red: 139
         Green: 0
@@ -28,6 +34,8 @@ Inventory:
     Boots:
       Name: '&7Witch Boots'
       Material: LEATHER_BOOTS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
       Dye:
         Red: 139
         Green: 0
@@ -36,12 +44,15 @@ Inventory:
     0:
       Name: '&aWitch''s Sword'
       Material: IRON_SWORD
+      Enchantments:
+        DAMAGE_ALL: 2
     1:
       Name: '&aPotion Switcher &7(Right Click)'
       Material: GLASS_BOTTLE
-    8:
-      Name: '&aPlayer Tracker &7(Right Click)'
-      Material: COMPASS
     Fill:
-      Name: '&aRegenerative Soup &7(Right Click)'
+      Name: '&&lSoup &7(Right Click)'
       Material: MUSHROOM_SOUP
+Effects:
+  SPEED:
+    Amplifier: 2
+    Duration: 9938

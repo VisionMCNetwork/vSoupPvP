@@ -7,6 +7,8 @@ Inventory:
     Helmet:
       Name: '&7Soldier Helmet'
       Material: LEATHER_HELMET
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
       Dye:
         Red: 77
         Green: 175
@@ -14,6 +16,8 @@ Inventory:
     Chestplate:
       Name: '&7Soldier Chestplate'
       Material: CHAINMAIL_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
       Dye:
         Red: 77
         Green: 175
@@ -21,6 +25,8 @@ Inventory:
     Leggings:
       Name: '&7Soldier Leggings'
       Material: LEATHER_LEGGINGS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
       Dye:
         Red: 77
         Green: 175
@@ -28,6 +34,8 @@ Inventory:
     Boots:
       Name: '&7Soldier Boots'
       Material: LEATHER_BOOTS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
       Dye:
         Red: 77
         Green: 175
@@ -36,6 +44,8 @@ Inventory:
     0:
       Name: '&aSoldier''s Sword'
       Material: STONE_SWORD
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
     1:
       Name: '&aSoldier''s Bow'
       Material: BOW
@@ -45,14 +55,15 @@ Inventory:
     3:
       Name: '&aGun &7(Right Click)'
       Material: IRON_HOE
-      Amount: 5
-    7:
+      Amount: 7
+    8:
       Name: '&aSoldier''s Arrows &7(+1 arrow each successful shot)'
       Material: ARROW
       Amount: 32
-    8:
-      Name: '&aPlayer Tracker &7(Right Click)'
-      Material: COMPASS
     Fill:
-      Name: '&aRegenerative Soup &7(Right Click)'
+      Name: '&e&lSoup'
       Material: MUSHROOM_SOUP
+Effects:
+  SPEED:
+    Amplifier: 1
+    Duration: 9938

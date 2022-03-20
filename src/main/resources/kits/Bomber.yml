@@ -20,7 +20,7 @@ Inventory:
         Blue: 59
     Leggings:
       Name: '&7Bomber Leggings'
-      Material: LEATHER_LEGGINGS
+      Material: IRON_LEGGINGS
       Dye:
         Red: 252
         Green: 45
@@ -36,21 +36,16 @@ Inventory:
     0:
       Name: '&aBomber''s Sword'
       Material: IRON_SWORD
+      Enchantments:
+        DAMAGE_ALL: 1
     1:
-      Name: '&aThrowable TNT &7(Right Click)'
-      Material: TNT
-      Amount: 16
-    2:
       Name: '&aTNT Trail &7(Right Click)'
       Material: COAL
       Amount: 3
-    8:
-      Name: '&aPlayer Tracker &7(Right Click)'
-      Material: COMPASS
     Fill:
-      Name: '&aRegenerative Soup &7(Right Click)'
+      Name: '&e&lSoup'
       Material: MUSHROOM_SOUP
 Effects:
   SPEED:
-    Amplifier: 2
+    Amplifier: 1
     Duration: 100000

@@ -10,6 +10,8 @@ Inventory:
     Chestplate:
       Name: '&7Tank Chestplate'
       Material: DIAMOND_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
     Leggings:
       Name: '&7Tank Leggings'
       Material: DIAMOND_LEGGINGS
@@ -23,15 +25,12 @@ Inventory:
     1:
       Name: '&aSpeed Boost &7(Right Click)'
       Material: FEATHER
-    8:
-      Name: '&aPlayer Tracker &7(Right Click)'
-      Material: COMPASS
     Fill:
-      Name: '&aRegenerative Soup &7(Right Click)'
+      Name: '&e&lSoup'
       Material: MUSHROOM_SOUP
 Effects:
-  SLOW:
-    Amplifier: 2
+  SPEED:
+    Amplifier: 1
     Duration: 100000
 Abilities:
   SpeedBoost:
@@ -41,7 +40,7 @@ Abilities:
     Cooldown:
       Cooldown: '40S'
     Message:
-      Message: '%prefix% &7You have used a &bSpeed Boost&7.'
+      Message: '%prefix%&eYou have used a &bSpeed Boost&e.'
     Sound:
       Sound: ZOMBIE_IDLE
       Pitch: 1

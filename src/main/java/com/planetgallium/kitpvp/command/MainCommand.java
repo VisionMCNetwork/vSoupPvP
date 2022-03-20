@@ -47,38 +47,38 @@ public class MainCommand implements CommandExecutor {
             sender.sendMessage(Toolkit.translate("&c&l[SoupPvP]"));
             sender.sendMessage(Toolkit.translate("&fVersion: &c" + plugin.getDescription().getVersion()));
             sender.sendMessage(Toolkit.translate("&fAuthors: &cCervinakuy, Gami, atyre"));
-            sender.sendMessage(Toolkit.translate("&fCommands: &c/Sp help"));
+            sender.sendMessage(Toolkit.translate("&fCommands: &c/Kp help"));
             return true;
 
         } else if (args.length == 1) {
 
             if (args[0].equalsIgnoreCase("help")) {
 
-                sender.sendMessage(Toolkit.translate("&4&m           &r &c&lSoupPvP &4&m             "));
+                sender.sendMessage(Toolkit.translate("&4&m           &r &c&lSoupPvP               &4&m"));
                 sender.sendMessage(Toolkit.translate(" "));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp &cDisplays information about KitPvP."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp help &cDisplays the help message."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp reload &cReloads the configuration files."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp debug &cPrints debug information."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp addspawn &cAdds a spawn to an arena."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp arena <arena> &cTeleports you to a different arena."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp delarena &cRemoves an arena."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp spawn &cTeleports you to the local arena spawn."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp create <kitName> &cCreates a kit from your inventory."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp delete <kitName> &cDeletes an existing kit."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp preview <kitName> &cPreview the contents of a kit."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp kits &cLists all available kits."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp kit <kitName> &cSelect a kit."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp kit <kitName> <player> &cAttempts to select a kit for a player."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp clear &cClears your current kit."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp clear <player> &cClears a kit for a player."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp stats &cView your stats."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp stats <player> &cView the stats of another player."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp menu &cDisplays the kits menu."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp setstats <player> <type> <amount> &cChange stats of a player."));
-                sender.sendMessage(Toolkit.translate("&7- &e/Sp export &cExports all stats to the new storage format."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp &cDisplays information about SoupPvP."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp help &cDisplays the help message."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp reload &cReloads the configuration files."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp debug &cPrints debug information."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp addspawn &cAdds a spawn to an arena."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp arena <arena> &cTeleports you to a different arena."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp delarena &cRemoves an arena."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp spawn &cTeleports you to the local arena spawn."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp create <kitName> &cCreates a kit from your inventory."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp delete <kitName> &cDeletes an existing kit."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp preview <kitName> &cPreview the contents of a kit."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp kits &cLists all available kits."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp kit <kitName> &cSelect a kit."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp kit <kitName> <player> &cAttempts to select a kit for a player."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp clear &cClears your current kit."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp clear <player> &cClears a kit for a player."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp stats &cView your stats."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp stats <player> &cView the stats of another player."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp menu &cDisplays the kits menu."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp setstats <player> <type> <amount> &cChange stats of a player."));
+                sender.sendMessage(Toolkit.translate("&7- &e/Kp export &cExports all stats to the new storage format."));
                 sender.sendMessage(Toolkit.translate(" "));
-                sender.sendMessage(Toolkit.translate("&4&m                                                                               "));
+                sender.sendMessage(Toolkit.translate("&4&m                                           &4&m"));
                 return true;
 
             } else if (args[0].equalsIgnoreCase("reload") && hasPermission(sender, "kp.command.reload")) {
@@ -101,7 +101,6 @@ public class MainCommand implements CommandExecutor {
                 sender.sendMessage(Toolkit.translate("&f[SoupPvP] &aServer Version: &7" + Bukkit.getBukkitVersion()) + " " + (Bukkit.getVersion().contains("Spigot") ? "(Spigot)" : "(Other)"));
                 sender.sendMessage(Toolkit.translate("&f[SoupPvP] &aPlugin Version: " + plugin.getDescription().getVersion() + " " + (plugin.needsUpdate() ? "&c(Requires Update)" : "&a(Latest Version)")));
                 sender.sendMessage(Toolkit.translate("&f[SoupPvP] &aSpawn Set: " + (config.contains("Arenas") ? "&aConfigured" : "&cUnconfigured")));
-                sender.sendMessage(Toolkit.translate("&f[SoupPvP] &aSupport Discord: &7https://discord.gg/Hfej6UR8Bk"));
                 sender.sendMessage(Toolkit.translate("&f[SoupPvP] &aPlugin List: &7" + names));
 
             } else if (args[0].equalsIgnoreCase("export") && hasPermission(sender, "kp.command.export")) {

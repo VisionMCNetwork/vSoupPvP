@@ -7,6 +7,8 @@ Inventory:
     Helmet:
       Name: '&7Warper Helmet'
       Material: LEATHER_HELMET
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
       Dye:
         Red: 0
         Green: 0
@@ -14,6 +16,8 @@ Inventory:
     Chestplate:
       Name: '&7Warper Chestplate'
       Material: LEATHER_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
       Dye:
         Red: 0
         Green: 0
@@ -21,6 +25,8 @@ Inventory:
     Leggings:
       Name: '&7Warper Leggings'
       Material: LEATHER_LEGGINGS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
       Dye:
         Red: 0
         Green: 0
@@ -28,6 +34,8 @@ Inventory:
     Boots:
       Name: '&7Warper Boots'
       Material: LEATHER_BOOTS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
       Dye:
         Red: 0
         Green: 0
@@ -48,5 +56,9 @@ Inventory:
       Name: '&aPlayer Tracker &7(Right Click)'
       Material: COMPASS
     Fill:
-      Name: '&aRegenerative Soup &7(Right Click)'
+      Name: '&e&lSoup'
       Material: MUSHROOM_SOUP
+Effects:
+  SPEED:
+    Amplifier: 1
+    Duration: 9938
