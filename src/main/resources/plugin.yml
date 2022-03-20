@@ -1,8 +1,11 @@
 name: SoupPvP
-author: Cervinakuy
+authors:
+ - Cervinakuy
+ - Gami
+ - atyre
 main: com.planetgallium.kitpvp.Game
-version: 2.2.0
-description: The ultimate all-in-one KitPvP plugin.
+version: 2.2.1
+description: The ultimate all-in-one SoupPvP plugin.
 website: https://www.spigotmc.org/resources/27107/
 softdepend: [PlaceholderAPI, WorldGuard]
 api-version: 1.13
