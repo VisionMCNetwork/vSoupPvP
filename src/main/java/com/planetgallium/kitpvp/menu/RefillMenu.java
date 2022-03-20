@@ -3,6 +3,7 @@ package com.planetgallium.kitpvp.menu;
 import com.cryptomorin.xseries.XMaterial;
 import com.planetgallium.kitpvp.util.Menu;
 import com.planetgallium.kitpvp.util.Resources;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 public class RefillMenu {
@@ -16,7 +17,7 @@ public class RefillMenu {
 
     private void create() {
 
-        this.menu = new Menu("Refill", null, 54);
+        this.menu = new Menu(ChatColor.YELLOW.toString() + ChatColor.BOLD + "Refill", null, 54);
 
         for (int i = 0; i < menu.getSize(); i++) {
             menu.addItem(resources.getConfig().getString("Soups.Name"), XMaterial.MUSHROOM_STEW.parseMaterial(), resources.getConfig().getStringList("Soups.Lore"), i);

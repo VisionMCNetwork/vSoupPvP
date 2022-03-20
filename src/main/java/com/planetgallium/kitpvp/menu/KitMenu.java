@@ -2,6 +2,7 @@ package com.planetgallium.kitpvp.menu;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.planetgallium.kitpvp.util.*;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
@@ -20,7 +21,7 @@ public class KitMenu {
 
 	private void create() {
 
-		this.menu = new Menu(resources.getMenu().getString("Menu.General.Title"), new KitHolder(), resources.getMenu().getInt("Menu.General.Size"));
+		this.menu = new Menu(ChatColor.YELLOW.toString() + ChatColor.BOLD + resources.getMenu().getString("Menu.General.Title"), new KitHolder(), resources.getMenu().getInt("Menu.General.Size"));
 
 		ConfigurationSection section = resources.getMenu().getConfigurationSection("Menu.Items");
 

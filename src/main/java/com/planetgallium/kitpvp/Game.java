@@ -19,12 +19,15 @@ import com.planetgallium.kitpvp.game.Arena;
 import com.planetgallium.kitpvp.listener.*;
 import com.planetgallium.kitpvp.util.*;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Game extends JavaPlugin implements Listener {
 	
 	private static Game instance;
 	private static String prefix = "None";
+
+	private List<Player> buildPlayers;
 
 	private Arena arena;
 	private Infobase database;
@@ -38,7 +41,7 @@ public class Game extends JavaPlugin implements Listener {
 	@Override
 	public void onEnable() {
 
-		Toolkit.printToConsole("[SoupPvP] Enabling KitPvP version " + this.getDescription().getVersion() + "...");
+		Toolkit.printToConsole("[SoupPvP] Enabling SoupPvP version " + this.getDescription().getVersion() + "...");
 
 		instance = this;
 		resources = new Resources(this);
@@ -68,6 +71,7 @@ public class Game extends JavaPlugin implements Listener {
 		
 		getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
 	    Objects.requireNonNull(getCommand("souppvp")).setExecutor(new MainCommand(this));
+	    Objects.requireNonNull(getCommand("build")).setExecutor(new BuildCommand());
 
 		if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
 			Bukkit.getConsoleSender().sendMessage(Toolkit.translate("[SoupPvP] Hooking into PlaceholderAPI..."));
@@ -138,5 +142,9 @@ public class Game extends JavaPlugin implements Listener {
 	public static String getPrefix() { return prefix; }
 	
 	public Resources getResources() { return resources; }
+
+	public List<Player> getBuildPlayers() {
+		return buildPlayers;
+	}
 	
 }

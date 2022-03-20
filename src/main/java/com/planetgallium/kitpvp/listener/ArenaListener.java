@@ -42,7 +42,7 @@ public class ArenaListener implements Listener {
 		
 		if (Toolkit.inArena(p) && config.getBoolean("Arena.PreventBlockBreaking")) {
 			
-			e.setCancelled(!p.hasPermission("kp.arena.blockbreaking"));
+			e.setCancelled(!Game.getInstance().getBuildPlayers().contains(p));
 			
 		}
 		
@@ -57,7 +57,7 @@ public class ArenaListener implements Listener {
 
 			if (config.getBoolean("Arena.PreventBlockPlacing")) {
 
-				e.setCancelled(!p.hasPermission("kp.arena.blockplacing"));
+				e.setCancelled(!Game.getInstance().getBuildPlayers().contains(p));
 
 			}
 			
@@ -83,7 +83,7 @@ public class ArenaListener implements Listener {
 		
 		if (Toolkit.inArena(p) && config.getBoolean("Arena.PreventItemDropping")) {
 			
-			e.setCancelled(!p.hasPermission("kp.arena.itemdropping"));
+			e.setCancelled(!Game.getInstance().getBuildPlayers().contains(p));
 			
 		}
 		
@@ -237,7 +237,7 @@ public class ArenaListener implements Listener {
 						
 						if (config.getBoolean("Arena.PreventChestOpen")) {
 							
-							e.setCancelled(true);
+							e.setCancelled(!Game.getInstance().getBuildPlayers().contains(p));
 							
 						}
 						

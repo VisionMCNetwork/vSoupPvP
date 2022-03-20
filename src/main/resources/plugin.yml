@@ -14,6 +14,9 @@ commands:
    souppvp:
      description: Main command.
      aliases: [kp, kit-pvp, soup-pvp, sp]
+   build:
+     description: Toggles a players build mode.
+     aliases: [buildmode]
    ckit:
      description: Select a kit.
    cspawn:
