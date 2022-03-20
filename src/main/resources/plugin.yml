@@ -11,9 +11,9 @@ softdepend: [PlaceholderAPI, WorldGuard]
 api-version: 1.13
 
 commands:
-   kitpvp:
+   souppvp:
      description: Main command.
-     aliases: [Sp, SoupPvP]
+     aliases: [Sp, Soup-PvP]
    ckit:
      description: Select a kit.
    cspawn:
