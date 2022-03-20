@@ -25,7 +25,7 @@ public class Toolkit {
 		if (Game.getInstance().getResources().getConfig().contains("Arenas")) {
 			return Game.getInstance().getResources().getConfig().contains("Arenas." + world.getName());
 		} else {
-			Toolkit.printToConsole("&7[&b&lKIT-PVP&7] &cThere was no spawn found, please set it using /kp addspawn.");
+			Toolkit.printToConsole("&f[SoupPvP] &cThere was no spawn found, please set it using /Sp addspawn.");
 		}
 		return false;
 
@@ -94,7 +94,7 @@ public class Toolkit {
 			String[] commandPhrase = commandString.split(":", 2);
 
 			if (commandPhrase.length == 1) {
-				Toolkit.printToConsole("&7[&b&lKIT-PVP&7] &cIncorrect command format. Please see: &fhttps://bit.ly/kp-command-format");
+				Toolkit.printToConsole("&f[SoupPvP] &cIncorrect command format. Please see: &fhttps://bit.ly/kp-command-format");
 				return;
 			}
 
@@ -113,7 +113,7 @@ public class Toolkit {
 
 			} else {
 
-				Toolkit.printToConsole("&7[&b&lKIT-PVP&7] &cIncorrect command format. Please see: &fhttps://bit.ly/kp-command-format");
+				Toolkit.printToConsole("&f[SoupPvP] Incorrect command format. Please see: &fhttps://bit.ly/kp-command-format");
 				return;
 
 			}

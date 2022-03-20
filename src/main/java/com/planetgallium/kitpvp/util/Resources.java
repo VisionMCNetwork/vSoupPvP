@@ -21,7 +21,7 @@ public class Resources {
 		this.plugin = plugin;
 		this.kits = new HashMap<>();
 
-		Toolkit.printToConsole("&7[&b&lKIT-PVP&7] &7Loading configuration files...");
+		Toolkit.printToConsole("[SoupPvp] Loading configuration files...");
 
 		if (!plugin.getDataFolder().exists()) {
 			kits.put("Fighter.yml", new Resource(plugin, "kits/Fighter.yml"));
@@ -49,7 +49,7 @@ public class Resources {
 		scoreboard = new Resource(plugin, "scoreboard.yml");
 		signs = new Resource(plugin, "signs.yml");
 
-		Toolkit.printToConsole("&7[&b&lKIT-PVP&7] &7Loading kit files...");
+		Toolkit.printToConsole("&f[SoupPvP] Loading kit files...");
 
 		for (String fileName : this.getKitList(true)) {
 			kits.put(fileName, new Resource(plugin, "kits/" + fileName));

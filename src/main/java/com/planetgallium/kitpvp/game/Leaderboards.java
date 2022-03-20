@@ -18,7 +18,7 @@ public class Leaderboards {
         this.database = plugin.getDatabase();
         this.leaderboards = new HashMap<>();
 
-        Toolkit.printToConsole("&7[&b&lKIT-PVP&7] &7Loading Leaderboard caches....");
+        Toolkit.printToConsole("&f[SoupPvP] Loading Leaderboard caches....");
         registerCache("kills", 25);
         registerCache("deaths", 25);
         registerCache("level", 25);

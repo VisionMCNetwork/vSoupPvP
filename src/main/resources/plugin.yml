@@ -1,4 +1,4 @@
-name: KitPvP
+name: SoupPvP
 author: Cervinakuy
 main: com.planetgallium.kitpvp.Game
 version: 2.2.0
@@ -10,7 +10,7 @@ api-version: 1.13
 commands:
    kitpvp:
      description: Main command.
-     aliases: [kp, kit-pvp]
+     aliases: [Sp, SoupPvP]
    ckit:
      description: Select a kit.
    cspawn:

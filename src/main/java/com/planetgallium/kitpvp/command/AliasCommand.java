@@ -26,31 +26,31 @@ public class AliasCommand implements Listener {
 		if (message.equals("/spawn") && config.getBoolean("Commands.Alias.Spawn")) {
 
 			e.setCancelled(true);
-			p.performCommand("kp spawn");
+			p.performCommand("Sp spawn");
 
 		} else if (message.equals("/kits") && config.getBoolean("Commands.Alias.Kits")) {
 
 			e.setCancelled(true);
-			p.performCommand("kp kits");
+			p.performCommand("Sp kits");
 
 		} else if (message.startsWith("/kit") && config.getBoolean("Commands.Alias.Kit")) {
 
 			if (words.length == 1) {
 				e.setCancelled(true);
-				p.performCommand("kp kit");
+				p.performCommand("Sp kit");
 			} else if (words.length == 2) {
 				e.setCancelled(true);
-				p.performCommand("kp kit " + words[1]);
+				p.performCommand("Sp kit " + words[1]);
 			}
 
 		} else if (message.startsWith("/stats") && config.getBoolean("Commands.Alias.Stats")) {
 
 			if (words.length == 1) {
 				e.setCancelled(true);
-				p.performCommand("kp stats");
+				p.performCommand("Sp stats");
 			} else if (words.length == 2) {
 				e.setCancelled(true);
-				p.performCommand("kp stats " + words[1]);
+				p.performCommand("Sp stats " + words[1]);
 			}
 
 		}

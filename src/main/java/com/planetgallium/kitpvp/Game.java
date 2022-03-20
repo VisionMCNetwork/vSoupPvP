@@ -36,7 +36,7 @@ public class Game extends JavaPlugin implements Listener {
 	@Override
 	public void onEnable() {
 
-		Toolkit.printToConsole("&7[&b&lKIT-PVP&7] &7Enabling &bKitPvP &7version &b" + this.getDescription().getVersion() + "&7...");
+		Toolkit.printToConsole("&f[SoupPvP] Enabling KitPvP version " + this.getDescription().getVersion() + "...");
 
 		instance = this;
 		resources = new Resources(this);
@@ -65,46 +65,20 @@ public class Game extends JavaPlugin implements Listener {
 		pm.registerEvents(getArena().getKillStreaks(), this);
 		
 		getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
-	    getCommand("kitpvp").setExecutor(new MainCommand(this));
-		
-		new Metrics(this);
-		
-		new BukkitRunnable() {
-			@Override
-			public void run() {
-				checkUpdate();
-			}
-		}.runTaskAsynchronously(this);
-		
+	    getCommand("souppvp").setExecutor(new MainCommand(this));
+
 		if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
-			Bukkit.getConsoleSender().sendMessage(Toolkit.translate("[&b&lKIT-PVP&7] &7Hooking into &bPlaceholderAPI&7..."));
+			Bukkit.getConsoleSender().sendMessage(Toolkit.translate("[SoupPvP] Hooking into PlaceholderAPI..."));
 			new Placeholders(this).register();
 			hasPlaceholderAPI = true;
 		}
 
 		if (Bukkit.getPluginManager().isPluginEnabled("WorldGuard")) {
-			Bukkit.getConsoleSender().sendMessage(Toolkit.translate("[&b&lKIT-PVP&7] &7Hooking into &bWorldGuard&7..."));
+			Bukkit.getConsoleSender().sendMessage(Toolkit.translate("[SoupPvP] Hooking into WorldGuard..."));
 			hasWorldGuard = true;
 		}
 
-		Toolkit.printToConsole("&7[&b&lKIT-PVP&7] &aDone!");
-		
-	}
-
-	private void checkUpdate() {
-
-		Updater.of(this).resourceId(27107).handleResponse((versionResponse, version) -> {
-			switch (versionResponse) {
-				case FOUND_NEW:
-					Bukkit.getConsoleSender().sendMessage(Toolkit.translate("&7[&b&lKIT-PVP&7] &aNew version found! Please update to v" + version + " on the Spigot page."));
-					needsUpdate = true;
-					updateVersion = version;
-					break;
-				case UNAVAILABLE:
-					Bukkit.getConsoleSender().sendMessage(Toolkit.translate("&7[&b&lKIT-PVP&7] &cUnable to perform an update check."));
-					break;
-			}
-		}).check();
+		Toolkit.printToConsole("[SoupPvP] &aDone!");
 		
 	}
 	
