@@ -1,10 +1,7 @@
 ![image](https://i.imgur.com/3MpRXfn.png)
 
-# KitPvP
-An all-in-one battle plugin built using customizable kits and features.
-
-# VisionMC SoupPvP Fork
-This is a SoupPvP for, VisionMC Network
+# VisionMC KitPvP Fork
+An all-in-one soup battle plugin built using customizable kits and features.
 
 ## Support
 * [Ask a question](https://github.com/cervinakuy/KitPvP/issues/new?assignees=&labels=help+wanted&template=ask-for-assistance.md&title=)
